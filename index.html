@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ORACLE-ONE Alura|| Challenge Encriptador || lotso coffee</title>
+</head>
+<body class="background">
+    <main class="main">
+    <header><nav><a href="https://www.aluracursos.com/" target="_blank"><img class="img-logo" src="img/img-mobile/mobile-logo.svg" alt="Alura logo"></a></nav></header>
+        <section>
+            <article>
+                <textarea id="encrypt" class="background" placeholder="Inserte el texto" autofocus required cols="30" rows="15"></textarea>
+                <div class="advice"><img src="img/img-mobile/vector-advice.svg" alt="advice sign"><p>Solo letras minúsculas y sin acentos</p></div>
+                <div class="btn-container flex"><button class="encrypt-btn" onclick="eraseEncrypt()">Encriptar</button><button class="decrypt-btn" onclick="eraseDecrypt()">Desencriptar</button></div>
+            </article>
+            <article class="gadget flex">
+                <textarea class="encrypt encrypted-text text hiden" autofocus required cols="30" rows="15"></textarea>                
+                    <div id="erase"><img class="duddy" src="img/img-desktop/duddy.svg" alt="fuddy duddy"><h2>Ningún mensaje fue encontrado</h2><p>Ingresa el texto que desees encriptar o desencriptar</p></div>                    
+                <button class="copy-btn decrypt-btn aside-btn hiden">Copiar</button>
+            </article>
+        </section>
+        <footer id="footer"><div><p class="description">Coded by <a href="https://www.github.com/laCaelihermosa" target="_blank">lotso' coffee,</a> a styled watermelon-banana bubble gum seal</p></div></footer>
+    </main>
+    <script src="javascript/encryptor.js"></script>
+</body>
+</html>

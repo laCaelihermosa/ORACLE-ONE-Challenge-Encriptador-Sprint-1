@@ -1,0 +1,164 @@
+/*general stuff*/
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+:root {
+    --Body-Font: 'Bai Jamjuree', sans-serif;  
+    --Highlights: 600 1.5em 'consolas';
+    --Main: #fffbcc;
+    --White-xican: rgba(255, 240, 249, 0.8);
+    --Font-color: #ff939c;    
+    --Orange-red: orangered;
+    --White: #fff;
+}
+
+body {    
+    font-family: var(--Body-Font); 
+    color: var(--Font-color);   
+}
+
+.background {
+    background: var(--Main);   
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea {
+    display: block;
+    resize: none;
+    width: 343px;    
+    border: none;
+    outline: none; 
+    font: var(--Highlights);       
+    color: var(--Font-color);
+}
+
+.hiden {
+    display: none;
+}
+/*main*/
+.main {
+    width: 375px;
+    margin: 0 auto; 
+    padding: 24px 16px 0;     
+}
+
+header {
+    margin-left: 16px;
+}
+
+#encrypt {    
+    margin: 80px auto -80px;         
+}
+
+#encrypt::placeholder {
+    font: var(--Highlights);    
+    color: var(--Font-color);
+}
+
+.advice {
+    display: flex;
+    position: relative;
+    gap: 8px;            
+    margin: 0 auto; 
+    padding-left: 16px;
+}
+
+.btn-container {   
+    gap: 20px;       
+    width: 343px;        
+    margin: 0 auto 50px; 
+}
+
+button {
+    width: 343px;
+    height: 67px;
+    font: var(--Highlights);    
+    line-height: 19.36px;     
+    color:  var(--Font-color);
+    background: var(--White-xican);
+    border: 1px solid var(--Orange-red);    
+    border-radius: 24px;    
+    outline: none;
+    box-shadow: rgba(240, 46, 170, 0.31) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
+    cursor: pointer;
+}
+
+.gadget {
+    width: 350px;
+    height: auto;
+    margin: 25px auto 25px;
+    padding-top: 30px;
+    border: 1px solid var(--Orange-red);    
+    border-radius: 16px;
+    text-align: center;
+    background: var(--White);
+    box-shadow: rgba(240, 46, 170, 0.31) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
+}
+
+h2 {
+    margin: -15px auto;
+}
+
+.copy-btn {
+    width: 300px;
+    margin-bottom: 35px;
+}
+/*footer*/
+footer {
+    padding-left: 16px;
+}
+
+.description
+a {
+    color: var(--Orange-red);
+}
+/*@media*/
+/* TABLET VIEWPORT*/
+@media (min-width: 688px) {
+    .main {
+        width: 600px;               
+    }      
+    .btn-container {
+        display: flex;
+        flex-direction: row;        
+        gap: 20px;              
+        width: 95%;        
+    }    
+    .gadget {
+        width: 95%;
+    }
+}
+/* DESKTOP VIEWPORT */
+@media (min-width: 1440px) { 
+    .main {
+        width: 1440px;        
+    }       
+    section {
+        display: flex;
+        justify-content: space-between;          
+        align-items: center;  
+    }         
+    #encrypt {
+        margin: 112px auto;
+    }
+    .gadget {                
+        width: 400px;
+        height: 892px;
+        margin: -52px 35px 0 0;                    
+        border-radius: 32px;                
+    }  
+    .duddy {
+        display: block;        
+        position: relative;
+        margin: 0 auto 0;        
+    }               
+    .description {
+        margin-top: -25px;
+        text-align: left;
+    }
+}
+

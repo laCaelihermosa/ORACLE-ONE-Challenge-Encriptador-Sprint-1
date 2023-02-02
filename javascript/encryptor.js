@@ -5,10 +5,10 @@ const elements = document.querySelectorAll(".elements");
 const copyBtn = document.querySelector(".aside-btn");
 let encryptedText = document.querySelector(".encrypted-text");
 
-const hidenElements = () => {
-  elements.forEach((element) => element.classList.add("hiden"));
-  copyBtn.classList.remove("hiden");
-  encryptedText.classList.remove("hiden");
+const hiddenElements = () => {
+  elements.forEach((element) => element.classList.add("hidden"));
+  copyBtn.classList.remove("hidden");
+  encryptedText.classList.remove("hidden");
 };
 
 const encryptGadget = () => {
@@ -49,7 +49,7 @@ encrypt.addEventListener("keyup", (event) => {
 
 encryptBtn.addEventListener("click", () => {
   emptySpace();
-  hidenElements();
+  hiddenElements();
   encryptGadget();
 });
 
@@ -59,7 +59,7 @@ function eraseEncrypt() {
 
 decryptBtn.addEventListener("click", () => {
   emptySpace();
-  hidenElements();
+  hiddenElements();
   decryptGadget();
 });
 
@@ -71,9 +71,9 @@ copyBtn.addEventListener("click", () => {
   encryptedText.select();
   encryptedText.setSelectionRange(0, 99999);
   navigator.clipboard.writeText(encryptedText.value);  
-  txtcopiado.classList.remove("hiden");
+  txtcopiado.classList.remove("hidden");
   setTimeout(() => {
-    txtcopiado.classList.add("hiden");
+    txtcopiado.classList.add("hidden");
   }, 1000);
 });
 
